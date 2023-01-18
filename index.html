@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Data Processing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.from.css">
+  <link rel="stylesheet" href="css/data-processing.css">
+
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="page-header">Data processing</h1>
+    <nav class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="javascript:void(0);" class="icon"
+        onclick="myFunction()">&#9776;</a>
+    </nav>
+  </header>
+
+  <main class="wrapper">
+
+    <div id="output">
+
+      <form class="main-form" action="" method="get">
+        <h2 class="subheader">Buy a thing, maybe:</h2>
+
+        <div id="widgets">
+          <div>
+            <b>Widget</b><br />
+            <p>Our Widgets are spring loaded and need no
+              batteries!</p>
+            <p>At $3.99 they're a bargain!</p>
+            <div class="pic"><img src="images/widget.png" />
+            </div>
+          </div>
+          <div>
+            <b>Sprocket</b><br />
+            <p>Our Sprockets are well made and hold up to
+              extreme pressure!</p>
+            <p>They only cost $5.99!</p>
+            <div class="pic"><img
+                src="images/sprocket.png" /></div>
+          </div>
+          <div>
+            <b>Thingy</b><br />
+            <p>Our Thingys have many uses, and people come
+              up with new ones all the time!</p>
+            <p>Such a deal at $1.99!</p>
+            <div class="pic"><img src="images/thingy.png" />
+            </div>
+          </div>
+
+
+          <h2 class="subheader">Shipping info:</h2>
+
+
+
+          <div>
+            <label for="FirstName">First Name</label> <br>
+            <input type="text" name="First_Name"
+              id="FirstName" placeholder="First Name Here"
+              required autofocus>
+          </div>
+          <div>
+            <label for="LastName">Last Name</label> <br>
+            <input type="text" name="Last_Name"
+              id="LastName" placeholder="Last Name Here"
+              required>
+          </div>
+          <div>
+            <label for="Email">Email</label> <br>
+            <input type="email" name="Email" id="Email"
+              placeholder="Email Here" required>
+          </div>
+
+          <div>
+            <label for="Phone">Phone</label> <br>
+            <input type="tel" id="Phone" name="Phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="xxx-xxx-xxx" required>
+
+          </div>
+
+          <div>
+            <label for="Address">Address</label> <br>
+            <input type="text" name="Address" id="Address"
+              placeholder="Address here" required>
+          </div>
+          <div>
+            <label for="City">City</label> <br>
+            <input type="text" name="City" id="City"
+              placeholder="City Here" required>
+          </div>
+          <div>
+            <label for="State">State</label> <br>
+            <select name="State" id="State" required>
+
+              <option value="">Select a State</option>
+              <option value="AK">Alaska</option>
+              <option value="CA">California</option>
+              <option value="OR">Oregon</option>
+              <option value="WA">Washington</option>
+
+            </select>
+          </div>
+
+          <div>
+            <label for="zipCode">Zip Code</label> <br>
+            <input type="text" name="Zip_Code" id="ZipCode"
+              placeholder="Zip Code Here" required>
+          </div>
+
+          <div>
+            <fieldset>
+              <legend>Would you like to join our mailing
+                list
+              </legend>
+              <label>
+
+                <input type="radio" name="JoinMailingList"
+                  value="Yes" required /> Yes <br>
+                <input type="radio" name="JoinMailingList"
+                  value="No" /> No
+
+              </label>
+            </fieldset>
+          </div>
+
+
+          <div>
+            <label for="Notes">Notes</label> <br>
+            <textarea name="Notes" id="Notes" cols="34"
+              rows="16"></textarea>
+          </div>
+
+          <div>
+            <input type="submit" value="Swag">
+          </div>
+      </form>
+    </div>
+
+    <p>The mobile navigation originates from <a
+        href="https://www.w3schools.com/howto/howto_js_mobile_navbar.asp"
+        target="_blank">W3Schools</a></p>
+    <footer>
+      <p><small>&copy; 2022-<span id="this-year"></span> by
+          YONUS BILLOW, All Rights Reserved ~
+          <a id="html-checker" href="#"
+            target="_blank">Check HTML</a> ~
+          <a id="css-checker" href="#" target="_blank">Check
+            CSS</a></small>
+      </p>
+    </footer>
+  </main>
+  <script src="js/main.js"></script>
+  <script src="js/data-processing.js"></script>
+
+</body>
+
+</html>
