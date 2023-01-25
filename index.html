@@ -6,10 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/main.from.css">
-  <link rel="stylesheet" href="css/data-processing.css">
-
+  <link rel="stylesheet" href="css/main.form.css">
   <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/data-processing.css">
   <link rel="stylesheet" href="css/forms.css">
 </head>
 
@@ -30,7 +29,7 @@
     <div id="output">
 
       <form class="main-form" action="" method="get">
-        <h2 class="subheader">Buy a thing, maybe:</h2>
+        <h2 class="subheader">Buy a thingy</h2>
 
         <div id="widgets">
           <div>
@@ -38,6 +37,9 @@
             <p>Our Widgets are spring loaded and need no
               batteries!</p>
             <p>At $3.99 they're a bargain!</p>
+            <p><label><input type="checkbox" name="Cart"
+                  value="Widget" /> Add to Cart</label>
+            </p>
             <div class="pic"><img src="images/widget.png" />
             </div>
           </div>
@@ -46,6 +48,9 @@
             <p>Our Sprockets are well made and hold up to
               extreme pressure!</p>
             <p>They only cost $5.99!</p>
+            <p><label><input type="checkbox" name="Cart"
+                  value="Sprocket" /> Add to Cart</label>
+            </p>
             <div class="pic"><img
                 src="images/sprocket.png" /></div>
           </div>
@@ -54,8 +59,10 @@
             <p>Our Thingys have many uses, and people come
               up with new ones all the time!</p>
             <p>Such a deal at $1.99!</p>
-            <div class="pic"><img src="images/thingy.png" />
-            </div>
+            <p><label><input type="checkbox" name="Cart"
+                  value="Thingy" /> Add to Cart</label>
+            </p>
+            <div class="pic"><img src="images/thingy.png" /></div>
           </div>
 
 
@@ -146,10 +153,6 @@
           </div>
       </form>
     </div>
-
-    <p>The mobile navigation originates from <a
-        href="https://www.w3schools.com/howto/howto_js_mobile_navbar.asp"
-        target="_blank">W3Schools</a></p>
     <footer>
       <p><small>&copy; 2022-<span id="this-year"></span> by
           YONUS BILLOW, All Rights Reserved ~
